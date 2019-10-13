@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Evil</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!--css files load-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.start.css">
+    <link rel="stylesheet" type="text/css" href="css/alert.css">
+
+    <style>
+        /*total fullscreen no margin and padding*/
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        /*the game background style*/
+        #background {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="background">
+        <div id="start-game" >
+            Click to Start Game
+        </div>
+    </div>
+    <div id="foreground">
+        <!--this div is to render some foreground frames such as alert frame -->
+    </div>
+    <!--react dom is used to render in a page-->
+    <script src="lib/react/react.production.min.js"></script>
+    <script src="lib/react/react-dom.production.min.js"></script>
+    <!--start-->
+    <script src="compilejs/alert.js"></script>
+    <script src="compilejs/resource.js"></script>
+    <script src="compilejs/bootstrap.start.js"></script>
+</body>
+
